@@ -1,0 +1,17 @@
+body{
+    background-image: url(hatter.jpg);
+}
+
+.kep{
+    width: 250px;
+}
+
+#osszErtek{
+    font-style: italic;
+}
+
+#hatter {
+    width: 70%;
+    background-color: white;
+    height: 100vh;
+}
