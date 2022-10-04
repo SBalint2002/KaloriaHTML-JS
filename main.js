@@ -10,6 +10,7 @@ function listaBetolt(a){
     let listaElem = document.createElement('li');
     listaElem.appendChild(ujElem(a));
     let torlesGomb = document.createElement('button');
+    torlesGomb.setAttribute("id", "gomb");
     torlesGomb.textContent = 'X';
     function torlesKatt() {
         listaElem.remove();
@@ -32,8 +33,10 @@ function ujElem(ertek){
         cim = "Juice";
     }
     let label = document.createElement('label');
-    label.textContent = cim + ': ' + ertek + ' ';
+    label.textContent = cim + ": ";
     let number = document.createElement('label');
+    number.setAttribute("id", "dolt");
+    number.textContent = ertek;
     label.appendChild(number);
     return label;
 }
